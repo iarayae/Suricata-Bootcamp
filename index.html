@@ -14,23 +14,146 @@
 
 <body>
     <!-- Bootstrap Menú Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e83e8c;">
         <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" alt="Suricata" height="40">
+          <img src="./assets/img/logo.png" alt="Suricata" height="40" class="ms-5">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto me-5">
               <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
             </ul>
           </div>
         </nav>
-    
+
+    <!-- Titulo Tarjetas -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4 fw-bold fs-1">Nuestros Productos</h2>
+
+    <!-- Fila 1 Tarjetas -->
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="./assets/img/bebidas.jpg" class="card-img-top" alt="Bebidas">
+            <div class="card-body">
+              <h5 class="card-title">Bebidas</h5>
+              <p class="card-text">Refrescos, jugos y otras bebidas naturales</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Sin azúcar añadida</li>
+              <li class="list-group-item">Origen 100% vegetal</li>
+            </ul>
+            <div class="card-body d-flex justify-content-between">
+              <a href="#" class="card-link text-primary">Ver más</a>
+              <a href="#" class="card-link text-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="./assets/img/colaciones.jpg" class="card-img-top" alt="Colaciones">
+            <div class="card-body">
+              <h5 class="card-title">Colaciones</h5>
+              <p class="card-text">Porciones individuales listas para servir</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Energía saludable</li>
+              <li class="list-group-item">Ideal para oficinas</li>
+            </ul>
+            <div class="card-body d-flex justify-content-between">
+              <a href="#" class="card-link text-primary">Ver más</a>
+              <a href="#" class="card-link text-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="./assets/img/desayunos.jpg" class="card-img-top" alt="Desayunos">
+            <div class="card-body">
+              <h5 class="card-title">Desayunos</h5>
+              <p class="card-text">Empieza el día con energía y sabor</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Opciones veganas</li>
+              <li class="list-group-item">Incluye fruta fresca</li>
+            </ul>
+            <div class="card-body d-flex justify-content-between">
+              <a href="#" class="card-link text-primary">Ver más</a>
+              <a href="#" class="card-link text-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+    <!-- Fila 2 Tarjetas -->
+    <div class="row g-4 mt-4">
+      <!-- Tarjeta 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="./assets/img/dulces.jpg" class="card-img-top" alt="Dulces">
+          <div class="card-body">
+            <h5 class="card-title">Dulces</h5>
+            <p class="card-text">Dulces varios</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tarjeta 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="./assets/img/empanadas.jpg" class="card-img-top" alt="Empanadas">
+          <div class="card-body">
+            <h5 class="card-title">Empanadas</h5>
+            <p class="card-text">Empanadas varias</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tarjeta 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="./assets/img/verduras.jpg" class="card-img-top" alt="Verduras">
+          <div class="card-body">
+            <h5 class="card-title">Verduras</h5>
+            <p class="card-text">Tipos de verduras</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </section>
+
+    <!-- Sección de íconos -->
+    <section class="icons-section text-center py-5 d-none d-lg-block" style="background-color: #17a2b8;">
+      <div class="container d-flex align-items-center justify-content-center gap-4 flex-wrap">
+        <p class="mb-0 text-white fw-bold fs-2">Ahora aceptamos</p>
+        <i class="fab fa-cc-visa text-white fa-3x"></i>
+        <i class="fab fa-cc-mastercard text-white fa-3x"></i>
+        <i class="fab fa-cc-amex text-white fa-3x"></i>
+        <i class="fab fa-cc-diners-club text-white fa-3x"></i>
+        <i class="fab fa-cc-paypal text-white fa-3x"></i>
+        <i class="fab fa-cc-discover text-white fa-3x"></i>
+      </div>
+    </section>   
+
+  
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background-color: #e83e8c;">
+    <img src="./assets/img/logo-footer.png" alt="Suricata Footer" height="60"><br>
+  </footer>
+
+  <!-- Bootstrap JS desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
